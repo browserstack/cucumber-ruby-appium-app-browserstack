@@ -1,0 +1,24 @@
+server: "hub.browserstack.com"
+user: "BROWSERSTACK_USERNAME"
+key: "BROWSERSTACK_ACCESS_KEY"
+
+common_caps:
+  "build": "cucumber-browserstack"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "device": "Google Pixel"
+    "realMobile": true
+    "app": "bs://<hashed app-id>"
+    "name": "parallel_test"
+  -
+    "device": "Google Nexus 5"
+    "realMobile": true
+    "app": "bs://<hashed app-id>"
+    "name": "parallel_test"
+  -
+    "device": "Samsung Galaxy S7"
+    "realMobile": true
+    "app": "bs://<hashed app-id>"
+    "name": "parallel_test"
