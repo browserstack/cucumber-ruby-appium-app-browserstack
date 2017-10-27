@@ -6,5 +6,3 @@ Code samples to get started with Appium tests for your Native App using the Cucu
 
 ## Resources
 * [Get Started guide](https://www.browserstack.com/app-automate/appium-cucumber)
-* [Android sample code repo](https://github.com/browserstack/cucumber-ruby-appium-app-browserstack/tree/master/android)
-* [IOS sample code repo](https://github.com/browserstack/cucumber-ruby-appium-app-browserstack/tree/master/ios)
