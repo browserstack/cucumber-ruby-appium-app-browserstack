@@ -9,6 +9,5 @@ common_caps:
 browser_caps:
   -
     "device": "Google Pixel"
-    "realMobile": true
     "app": "bs://<hashed app-id>"
     "name": "single_test"
