@@ -9,11 +9,9 @@ common_caps:
 browser_caps:
   -
     "device": "iPhone 7 Plus"
-    "realMobile": true
     "app": "bs://<hashed app-id>"
     "name": "parallel_test"
   -
     "device": "iPhone 7"
-    "realMobile": true
     "app": "bs://<hashed app-id>"
     "name": "parallel_test"

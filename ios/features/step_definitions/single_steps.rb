@@ -17,6 +17,6 @@ Then /^I should get a registration error$/ do
   text_elements = $driver.find_elements(:xpath, "//XCUIElementTypeStaticText")
   text_elements.size.should > 0
 
-  error_element = text_elements.select { |element| element.text.match(/not registered/) }.first
+  error_element = text_elements.select { |element| !element.nil? && element.text.match(/not registered/) }.first
   error_element.text.should include("not registered on WordPress.com")
 end
