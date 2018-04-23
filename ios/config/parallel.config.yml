@@ -5,6 +5,7 @@ key: "BROWSERSTACK_ACCESS_KEY"
 common_caps:
   "build": "cucumber-browserstack"
   "browserstack.debug": true
+  "browserstack.enterpriseApp": true
 
 browser_caps:
   -
