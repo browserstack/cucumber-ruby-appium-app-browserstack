@@ -15,7 +15,7 @@ caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 $bs_local = nil
 
 if ENV['BROWSERSTACK_APP_ID']
-  caps['app']=ENV['BROWSERSTACK_APP_ID']
+  caps['app'] = ENV['BROWSERSTACK_APP_ID']
 end
 
 if caps['browserstack.local'] && caps['browserstack.local'].to_s == 'true'
