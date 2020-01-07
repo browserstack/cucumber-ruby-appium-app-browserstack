@@ -19,7 +19,7 @@ to the BrowserStack servers using the above API.
 * To run local tests, run `bundle exec rake local`
 
 ## Notes
-* You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/app-automate)
+* You can view your test results on the [BrowserStack App Automate dashboard](https://www.browserstack.com/app-automate)
 * Refer [Get Started](https://www.browserstack.com/app-automate/appium-cucumber) document to configure the capabilities
 * You can export the environment variables for the Username and Access Key of your BrowserStack account. 
 

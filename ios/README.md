@@ -7,7 +7,7 @@
 * Upload your Native App (.ipa file) to BrowserStack servers using upload API:
 
   ```
-  curl -u "username:accesskey" -X POST "https://api.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.ipa"
+  curl -u "username:accesskey" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.ipa"
   ```
 
 * If you do not have an .ipa file and looking to simply try App Automate, [you can download our sample app and upload](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa)
@@ -19,7 +19,7 @@ to the BrowserStack servers using the above API.
 * To run local tests, run `bundle exec rake local`
 
 ## Notes
-* You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/app-automate)
+* You can view your test results on the [BrowserStack App Automate dashboard](https://www.browserstack.com/app-automate)
 * Refer [Get Started](https://www.browserstack.com/app-automate/appium-cucumber) document to configure the capabilities
 * You can export the environment variables for the Username and Access Key of your BrowserStack account. 
 
