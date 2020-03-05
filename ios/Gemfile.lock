@@ -34,11 +34,11 @@ GEM
     ffi (1.9.18)
     gherkin (4.1.3)
     json (2.1.0)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     multi_json (1.12.2)
     multi_test (0.1.2)
-    nokogiri (1.8.1)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.9.1)
+      mini_portile2 (~> 2.4.0)
     parallel (1.12.0)
     parallel_tests (2.17.0)
       parallel
@@ -83,4 +83,4 @@ DEPENDENCIES
   selenium-webdriver
 
 BUNDLED WITH
-   1.15.3
+   1.17.3
