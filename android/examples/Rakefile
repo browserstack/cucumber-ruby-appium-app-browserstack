@@ -4,13 +4,18 @@ require 'cucumber/rake/task'
 
 Cucumber::Rake::Task.new(:single) do |task|
   ENV['CONFIG_NAME'] ||= "single"
-  task.cucumber_opts = ['--format=pretty', 'features/single.feature']
+  task.cucumber_opts = ['--format=pretty', '--require run-first-test/', 'run-first-test/']
 end
 
 task :default => :single
 
 Cucumber::Rake::Task.new(:local) do |task|
-  task.cucumber_opts = ['--format=pretty', 'features/local.feature', 'CONFIG_NAME=local']
+  task.cucumber_opts = ['--format=pretty', '--require run-local-test/', 'run-local-test/', 'CONFIG_NAME=local']
+end
+
+Cucumber::Rake::Task.new(:distinct) do |task|
+  ENV['CONFIG_NAME'] ||= 'parallel'
+  task.cucumber_opts = ['--format=pretty', '--require run-parallel-tests/', 'run-parallel-tests/']
 end
 
 task :parallel do |t, args|
@@ -21,15 +26,14 @@ task :parallel do |t, args|
     ENV['name'] = "parallel_test"
     ENV['CONFIG_NAME'] = "parallel"
 
-    Rake::Task["single"].invoke
-    Rake::Task["single"].reenable
+    Rake::Task["distinct"].invoke
+    Rake::Task["distinct"].reenable
   end
 end
 
 
 task :test do |t, args|
   Rake::Task["single"].invoke
-  Rake::Task["single"].reenable
   Rake::Task["local"].invoke
   Rake::Task["parallel"].invoke
 end

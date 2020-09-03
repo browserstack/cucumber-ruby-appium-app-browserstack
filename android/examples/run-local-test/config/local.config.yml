@@ -1,0 +1,16 @@
+server: "hub-cloud.browserstack.com"
+username: BROWSERSTACK_USERNAME
+access_key: BROWSERSTACK_ACCESS_KEY
+
+common_caps:
+  "project": "First Cucumber Android Project"
+  "build": "Cucumber Android"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "device": "Google Pixel 3"
+    "os_version": "9.0"
+    "app": "bs://<app-id>"
+    "browserstack.local": true
+    "name": "local_test"
