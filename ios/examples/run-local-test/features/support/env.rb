@@ -5,7 +5,7 @@ require 'browserstack/local'
 require 'appium_lib'
 
 TASK_ID = (ENV['TASK_ID'] || 0).to_i
-CONFIG_NAME = ENV['CONFIG_NAME'] || 'first'
+CONFIG_NAME = ENV['CONFIG_NAME'] || 'single'
 
 CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), "../../config/#{CONFIG_NAME}.config.yml")))
 CONFIG['username'] = ENV['BROWSERSTACK_USERNAME'] || CONFIG['username']
@@ -16,6 +16,12 @@ $bs_local = nil
 
 if ENV['BROWSERSTACK_APP_ID']
   caps['app'] = ENV['BROWSERSTACK_APP_ID']
+end
+
+if caps['browserstack.local'] && caps['browserstack.local'].to_s == 'true'
+  $bs_local = BrowserStack::Local.new
+  bs_local_args = { "key" => "#{CONFIG['access_key']}" }
+  $bs_local.start(bs_local_args)
 end
 
 desired_caps = {

@@ -1,6 +1,6 @@
 server: "hub-cloud.browserstack.com"
-username: BROWSERSTACK_USERNAME
-access_key: BROWSERSTACK_ACCESS_KEY
+username: "BROWSERSTACK_USERNAME"
+access_key: "BROWSERSTACK_ACCESS_KEY"
 
 common_caps:
   "project": "First Cucumber Android Project"

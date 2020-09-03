@@ -5,7 +5,7 @@ require 'browserstack/local'
 require 'appium_lib'
 
 TASK_ID = (ENV['TASK_ID'] || 0).to_i
-CONFIG_NAME = ENV['CONFIG_NAME'] || 'first'
+CONFIG_NAME = ENV['CONFIG_NAME'] || 'single'
 
 CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), "../../config/#{CONFIG_NAME}.config.yml")))
 CONFIG['username'] = ENV['BROWSERSTACK_USERNAME'] || CONFIG['username']

@@ -3,14 +3,14 @@ username: "BROWSERSTACK_USERNAME"
 access_key: "BROWSERSTACK_ACCESS_KEY"
 
 common_caps:
-  "project": "First Cucumber Android Project"
-  "build": "Cucumber Android"
+  "project": "First Cucumber iOS Project"
+  "build": "Cucumber iOS"
   "browserstack.debug": true
 
 browser_caps:
   -
-    "device": "Google Pixel 3"
-    "os_version": "9.0"
-    "app": "bs://<app-id>"
+    "device": "iPhone 11 Pro"
+    "os_version": "13"
+    "app": "bs://<hashed app-id>"
     "browserstack.local": true
     "name": "local_test"

@@ -1,0 +1,19 @@
+server: "hub-cloud.browserstack.com"
+username: "BROWSERSTACK_USERNAME"
+access_key: "BROWSERSTACK_ACCESS_KEY"
+
+common_caps:
+  "project": "First Cucumber iOS Project"
+  "build": "Cucumber iOS"
+
+browser_caps:
+  -
+    "device": "iPhone 11 Pro"
+    "os_version": "13"
+    "app": "bs://<hashed app-id>"
+    "name": "parallel_test_1"
+  -
+    "device": "iPhone 11 Pro Max"
+    "os_version": "13"
+    "app": "bs://<hashed app-id>"
+    "name": "parallel_test_2"
