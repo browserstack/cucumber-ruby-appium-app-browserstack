@@ -7,8 +7,8 @@ Code samples to get started with Appium tests for your Native App using the Cucu
 ## Setup
 ### Requirements
 
-1. Ruby
-2. Bundler
+1. Ruby: If you don't have Ruby installed, follow the instructions given [here](https://www.ruby-lang.org/en/documentation/installation/)
+2. Bundler : If you dont have Bundler installed, follow the instructions given [here](https://bundler.io/)
 
 ### Install the dependencies
 

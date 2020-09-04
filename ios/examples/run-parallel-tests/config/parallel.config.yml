@@ -1,8 +1,8 @@
 server: "hub-cloud.browserstack.com"
-username: "BROWSERSTACK_USERNAME"
-access_key: "BROWSERSTACK_ACCESS_KEY"
 
 common_caps:
+  "browserstack.user": "BROWSERSTACK_USERNAME"
+  "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
   "project": "First Cucumber iOS Project"
   "build": "Cucumber iOS"
 
