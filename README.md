@@ -8,6 +8,7 @@ Code samples to get started with Appium tests for your Native App using the Cucu
 ### Requirements
 
 1. Ruby
+2. Bundler
 
 ### Install the dependencies
 
