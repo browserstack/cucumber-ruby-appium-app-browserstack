@@ -11,5 +11,5 @@ browser_caps:
   -
     "device": "Google Pixel 3"
     "os_version": "9.0"
-    "app": "bs://24066b2934ed9885f2e4d3282d9bb49105060e51"
+    "app": "bs://<app-id>"
     "name": "first_test"

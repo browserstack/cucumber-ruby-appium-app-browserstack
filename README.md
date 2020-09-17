@@ -29,7 +29,7 @@ bundle install
 
 ## Getting Started
 
-Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
+Getting Started with Appium tests in Cucumber Ruby on BrowserStack couldn't be easier!
 
 ### **Run first test :**
 
