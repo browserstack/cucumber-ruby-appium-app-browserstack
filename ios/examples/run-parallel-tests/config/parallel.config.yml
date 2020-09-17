@@ -5,15 +5,14 @@ common_caps:
   "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
   "project": "First Cucumber iOS Project"
   "build": "Cucumber iOS"
+  "app": "bs://<app-id>"
 
 browser_caps:
   -
     "device": "iPhone 11 Pro"
     "os_version": "13"
-    "app": "bs://<hashed app-id>"
     "name": "parallel_test_1"
   -
     "device": "iPhone 11 Pro Max"
     "os_version": "13"
-    "app": "bs://<hashed app-id>"
     "name": "parallel_test_2"

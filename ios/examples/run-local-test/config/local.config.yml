@@ -11,6 +11,6 @@ browser_caps:
   -
     "device": "iPhone 11 Pro"
     "os_version": "13"
-    "app": "bs://<hashed app-id>"
+    "app": "bs://<app-id>"
     "browserstack.local": true
     "name": "local_test"
