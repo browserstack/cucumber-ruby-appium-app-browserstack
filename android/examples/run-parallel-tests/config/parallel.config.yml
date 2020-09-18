@@ -1,0 +1,19 @@
+server: "hub-cloud.browserstack.com"
+
+common_caps:
+  "browserstack.user": "BROWSERSTACK_USERNAME"
+  "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
+  "project": "First Cucumber Android Project"
+  "build": "Cucumber Android"
+  "browserstack.debug": true
+  "app" : "bs://<app-id>"
+
+browser_caps:
+  -
+    "device": "Google Pixel 3"
+    "os_version": "9.0"
+    "name": "parallel_test_1"
+  -
+    "device": "Samsung Galaxy S10e"
+    "os_version": "9.0"
+    "name": "parallel_test_2"

@@ -1,0 +1,15 @@
+server: "hub-cloud.browserstack.com"
+
+common_caps:
+  "browserstack.user": "BROWSERSTACK_USERNAME"
+  "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
+  "project": "First Cucumber iOS Project"
+  "build": "Cucumber iOS"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "device": "iPhone 11 Pro"
+    "os_version": "13"
+    "app": "bs://<app-id>"
+    "name": "first_test"
