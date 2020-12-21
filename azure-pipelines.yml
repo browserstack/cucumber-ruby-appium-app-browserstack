@@ -21,5 +21,7 @@ steps:
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
-- script: bundle exec rake
+- script: |
+    cd android/examples
+     bundle exec rake first
   displayName: 'bundle exec rake first'
