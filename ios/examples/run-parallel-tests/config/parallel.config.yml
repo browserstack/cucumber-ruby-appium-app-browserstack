@@ -4,7 +4,7 @@ common_caps:
   "browserstack.user": "BROWSERSTACK_USERNAME"
   "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
   "project": "First Cucumber iOS Project"
-  "build": "Cucumber iOS"
+  "build": "browserstack-build-1"
   "app": "bs://<app-id>"
 
 browser_caps:
