@@ -4,7 +4,7 @@ common_caps:
   "browserstack.user": "BROWSERSTACK_USERNAME"
   "browserstack.key": "BROWSERSTACK_ACCESS_KEY"
   "project": "First Cucumber Android Project"
-  "build": "Cucumber Android"
+  "build": "browserstack-build-1"
   "browserstack.debug": true
 
 browser_caps:
