@@ -6,3 +6,6 @@ Background:
 Scenario: Search for a term
   When I type in "BrowserStack"
   Then I should see results
+
+Scenario: Confirm if term still exists
+  Then I should see results
