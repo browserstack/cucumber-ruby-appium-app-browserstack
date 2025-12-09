@@ -9,7 +9,7 @@ common_caps:
 
 browser_caps:
   -
-    "device": "iPhone 11 Pro"
-    "os_version": "13"
+    "device": "iPhone 14 Pro Max"
+    "os_version": "16"
     "app": "bs://<app-id>"
     "name": "first_test"

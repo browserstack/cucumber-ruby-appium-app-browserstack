@@ -9,8 +9,8 @@ common_caps:
 
 browser_caps:
   -
-    "device": "Google Pixel 3"
-    "os_version": "9.0"
+    "device": "Google Pixel 8 Pro"
+    "os_version": "14.0"
     "app": "bs://<app-id>"
     "browserstack.local": true
     "name": "local_test"
