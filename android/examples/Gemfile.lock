@@ -59,11 +59,12 @@ GEM
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     middleware (0.1.0)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.8.2)
     minitest (5.14.2)
     multi_test (0.1.2)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.15.2)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     parallel (1.19.2)
     parallel_tests (3.2.0)
       parallel
@@ -72,6 +73,7 @@ GEM
       middleware
       thor
       thread_safe
+    racc (1.7.1)
     rake (13.0.1)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
