@@ -1,0 +1,20 @@
+userName: YOUR_BROWSERSTACK_USERNAME
+accessKey: YOUR_BROWSERSTACK_ACCESS_KEY
+
+app: bs://<app-id>
+
+projectName: First Cucumber Android Project
+buildName: browserstack-build-1
+
+platforms:
+  - deviceName: iPhone 14
+    osVersion: "16.0"
+    platformName: ios
+  - deviceName: iPhone 14 Plus
+    osVersion: "16.0"
+    platformName: ios
+
+debug: true
+
+browserStackLocal: false # Set to true if you want to test your private or internal server using BrowserStack Local
+parallelsPerPlatform: 1 # Set value for parallel execution.
